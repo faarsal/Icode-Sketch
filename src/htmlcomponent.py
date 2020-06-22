@@ -231,7 +231,7 @@ class HTMLComponent:
         self.styles['height'] = str(self.h) + "px"
         self.styles['display'] = "block"
         self.styles['position'] = "absolute"
-        self.styles['text-align'] = "center"
+        #self.styles['text-align'] = "center"
 
     def getStyle(self):
         return self.styles
@@ -239,7 +239,7 @@ class HTMLComponent:
     def get_inner_html(self, ocr=0):
         if(self.attributes['tag']=='button'):
             return 'Button'
-        s = "a"*int(self.w/10)
+        s = "a"*int(self.w/20)
         if ocr == 0:
             return self.getRandomText(len(s))
         elif ocr == 1:

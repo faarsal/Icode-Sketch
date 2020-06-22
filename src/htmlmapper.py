@@ -85,7 +85,8 @@ if len(args) < 1:
 filename=args[0]
 print("Starting the engine....")
 mp=HtmlMapper()
-image=cv2.imread("../images/"+filename+".png")
+image=cv2.imread("../images/"+filename)
+image = cv2.resize(image, (1352, 653),  interpolation = cv2.INTER_NEAREST)
 code=mp.Code(img=image,path="../generated/components/",static=True)
 f=open("../generated/codes/1.html","w+")
 f.write(code)
