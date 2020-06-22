@@ -8,7 +8,7 @@ open the ./src folder
 
 run command python htmlmapper.py file_name.png
 
-## REQUIRMENTS 
+## REQUIREMENTS 
 * pytorch
 * PIL
 * OpenCV
